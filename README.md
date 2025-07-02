@@ -13,20 +13,6 @@
 
 </div>
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
 
 ## Overview
 
@@ -35,7 +21,7 @@ MindEase is a comprehensive mental health support application built with Flutter
 ### Key Highlights
 
 - ** Secure Authentication** - Firebase Auth integration with email/password and social login options
-- **📊 Mood Analytics** - Daily mood assessments with detailed analytics and trends
+- ** Mood Analytics** - Daily mood assessments with detailed analytics and trends
 - ** Breathing Exercises** - Guided meditation sessions with customizable timers
 - ** Expert Chat** - Real-time messaging with certified mental health professionals
 - ** Content Moderation** - AI-powered safety features for community protection
@@ -569,10 +555,3 @@ SOFTWARE.
 
 ---
 
-<div align="center">
-
-**Made with heart for mental health awareness**
-
-[Privacy Policy](https://mindease.app/privacy) | [Terms of Service](https://mindease.app/terms) | [Contact Us](mailto:hello@mindease.app)
-
-</div>
