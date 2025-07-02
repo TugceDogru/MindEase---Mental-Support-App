@@ -11,7 +11,7 @@ class FirestoreService {
   Future<UserModel> getUserProfile(String uid) async {
     final doc = await _db.collection('users').doc(uid).get();
     if (!doc.exists) {
-      throw Exception('Kullanıcı bulunamadı');
+      throw Exception('Username not found');
     }
     return UserModel.fromMap(doc.data()!..['uid'] = uid);
   }

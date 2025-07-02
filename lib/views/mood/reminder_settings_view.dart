@@ -31,29 +31,29 @@ class _ReminderSettingsViewState extends State<ReminderSettingsView> {
     await _notificationService.scheduleCustomDailyReminder(_selectedTime);
     ScaffoldMessenger.of(
       context,
-    ).showSnackBar(const SnackBar(content: Text('Hatırlatma ayarlandı')));
+    ).showSnackBar(const SnackBar(content: Text('Reminder set')));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Hatırlatma Ayarı')),
+      appBar: AppBar(title: const Text('Reminder Setting')),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Hatırlatma saati seç:', style: TextStyle(fontSize: 18)),
+            const Text('Select reminder time:', style: TextStyle(fontSize: 18)),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: _pickTime,
-              child: Text('Seçili Saat: ${_selectedTime.format(context)}'),
+              child: Text('Selected Time: ${_selectedTime.format(context)}'),
             ),
             const SizedBox(height: 32),
             ElevatedButton.icon(
               onPressed: _saveReminder,
               icon: const Icon(Icons.alarm),
-              label: const Text('Hatırlatma Ayarla'),
+              label: const Text('Set Reminder'),
             ),
           ],
         ),

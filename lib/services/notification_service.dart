@@ -9,7 +9,7 @@ class NotificationService {
       FlutterLocalNotificationsPlugin();
 
   Future<void> init() async {
-    // FCM izinleri
+    // FCM permissions
     NotificationSettings settings = await _fcm.requestPermission(
       alert: true,
       badge: true,
@@ -78,7 +78,7 @@ class NotificationService {
         android: AndroidNotificationDetails(
           'daily_mood_channel',
           'Daily Mood Reminder',
-          channelDescription: 'Her akşam mood girişini hatırlatır',
+          channelDescription: 'Reminds you to log in to your mood every evening',
           importance: Importance.max,
           priority: Priority.high,
         ),
@@ -106,6 +106,6 @@ class NotificationService {
 
   Future<void> cancelAllScheduledNotifications() async {
     await _localPlugin.cancelAll();
-    print('Tüm bildirimler iptal edildi');
+    print('All notifications cancelled');
   }
 }

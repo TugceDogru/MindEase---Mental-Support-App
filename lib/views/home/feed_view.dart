@@ -41,7 +41,7 @@ class FeedView extends StatelessWidget {
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: 0,
         onTap: (i) {
-          // TODO: Sayfa geçişi
+          // TODO: Page transition
         },
       ),
     );

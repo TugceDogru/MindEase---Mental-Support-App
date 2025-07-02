@@ -35,7 +35,7 @@ class AuthViewModel extends ChangeNotifier {
         _setState(AuthState.success);
         return true;
       } else {
-        _errorMessage = 'Kullanıcı bulunamadı.';
+        _errorMessage = 'Username not found.';
         _setState(AuthState.error);
         return false;
       }
@@ -44,7 +44,7 @@ class AuthViewModel extends ChangeNotifier {
       _setState(AuthState.error);
       return false;
     } catch (e) {
-      _errorMessage = 'Beklenmeyen bir hata oluştu.';
+      _errorMessage = 'An unexpected error occurred.';
       _setState(AuthState.error);
       return false;
     }
@@ -62,7 +62,7 @@ class AuthViewModel extends ChangeNotifier {
         _setState(AuthState.success);
         return true;
       } else {
-        _errorMessage = 'Kayıt sırasında sorun oluştu.';
+        _errorMessage = 'There was a problem while registering.';
         _setState(AuthState.error);
         return false;
       }
@@ -71,7 +71,7 @@ class AuthViewModel extends ChangeNotifier {
       _setState(AuthState.error);
       return false;
     } catch (e) {
-      _errorMessage = 'Beklenmeyen bir hata oluştu.';
+      _errorMessage = 'An unexpected error occurred.';
       _setState(AuthState.error);
       return false;
     }

@@ -4,6 +4,7 @@ import 'package:mind_ease/views/home/expert_list_view.dart';
 import 'package:mind_ease/views/mood/activity_view.dart';
 import 'package:mind_ease/views/profile/profile_view.dart';
 import 'package:mind_ease/views/mood/reminder_settings_view.dart';
+import 'package:mind_ease/views/rooms/room_list_view.dart';
 
 // Auth
 import '../views/auth/login_view.dart';
@@ -21,10 +22,7 @@ class Routes {
   static const String appointment = '/appointment';
   static const String moodActivity = '/mood';
   static const String reminderSettings = '/reminder';
-  // For other screens you may add in the future:
-  // static const String roomList = '/rooms';
-  // etc.
-  // roomList: (context) => RoomListView(),
+  static const String roomList = '/rooms';
 
   static final Map<String, WidgetBuilder> routes = {
     login: (context) => LoginView(),
@@ -36,6 +34,6 @@ class Routes {
     moodActivity: (context) => ActivityView(),
     reminderSettings: (context) => const ReminderSettingsView(),
 
-    // roomList: (context) => RoomListView(),
+    roomList: (context) => RoomListView(),
   };
 }

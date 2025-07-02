@@ -46,7 +46,6 @@ class _CreateRoomViewState extends State<CreateRoomView> {
               onPressed: _isLoading ? null : () async {
                 if (_nameController.text.trim().isEmpty) return;
                 setState(() => _isLoading = true);
-                // Dummy: Add to provider (gerçek backend ile entegre edilebilir)
                 final vm = Provider.of<RoomViewModel>(context, listen: false);
                 vm.rooms.add(Room(id: DateTime.now().millisecondsSinceEpoch.toString(), name: _nameController.text.trim()));
                 vm.notifyListeners();

@@ -31,4 +31,6 @@ class MoodLog {
       note: map['note'] as String?,
     );
   }
+
+  static Future<List<MoodLog>> fromFirestore(QueryDocumentSnapshot<Object?> doc) {}
 }

@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class UserModel {
   final String uid;
   final String email;
@@ -10,7 +12,7 @@ class UserModel {
     required this.email,
     this.displayName,
     this.photoUrl,
-    this.isExpert = false,
+    this.isExpert = false, required String username, required DateTime createdAt, required DateTime updatedAt, required bool profileCompleted, required role, required bool isActive, required String id,
   });
 
   factory UserModel.fromMap(Map<String, dynamic> map) {
@@ -32,4 +34,8 @@ class UserModel {
       'isExpert': isExpert,
     };
   }
+
+  Map<String, dynamic> toFirestore() {}
+
+  static Future<UserModel?> fromFirestore(DocumentSnapshot<Object?> doc) {}
 }

@@ -31,7 +31,7 @@ class ActivityView extends StatelessWidget {
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: 1,
         onTap: (i) {
-          // TODO: Sayfa geçişi
+          // TODO: Page transition
         },
       ),
     );

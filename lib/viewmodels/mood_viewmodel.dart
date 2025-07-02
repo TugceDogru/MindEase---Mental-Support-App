@@ -51,9 +51,9 @@ class MoodViewModel extends ChangeNotifier {
       );
 
       if (todayLog != null) {
-        await _db.updateMoodLog(log); // 🔁 update if exists
+        await _db.updateMoodLog(log); 
       } else {
-        await _db.saveMoodLog(log); // 🆕 save if not exists
+        await _db.saveMoodLog(log);
       }
 
       _setState(MoodState.idle);
@@ -110,7 +110,7 @@ class MoodViewModel extends ChangeNotifier {
     for (final log in _moodLogs) {
       final date = log.timestamp.toLocal();
       if (now.difference(date).inDays <= 6) {
-        final day = DateFormat.E('tr_TR').format(date); // e.g. "Mon"
+        final day = DateFormat.E('tr_TR').format(date);
         scores[day] = getMoodScore(log.mood).toDouble();
       }
     }

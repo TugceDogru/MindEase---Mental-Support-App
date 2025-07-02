@@ -36,7 +36,7 @@ class ProfileViewModel extends ChangeNotifier {
     }
   }
 
-  /// Güncelleme metodunu çağırır.
+  /// Calls the update method.
   Future<bool> updateProfile() async {
     if (user == null) return false;
     _setState(ProfileState.busy);

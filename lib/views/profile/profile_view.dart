@@ -11,11 +11,11 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+          return Scaffold(
       appBar: AppBar(title: Text('MindEase')),
       body: Padding(
         padding: EdgeInsets.all(24),
-        child: Column(
+                      child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 24),
@@ -29,14 +29,14 @@ class ProfileView extends StatelessWidget {
             SizedBox(height: 24),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+                        children: [
                 _buildStat('Posts', '0'),
                 SizedBox(width: 32),
                 _buildStat('Followers', '0'),
                 SizedBox(width: 32),
                 _buildStat('Following', '0'),
               ],
-            ),
+                          ),
             SizedBox(height: 32),
             SizedBox(
               width: double.infinity,
@@ -50,10 +50,10 @@ class ProfileView extends StatelessWidget {
                   padding: EdgeInsets.symmetric(vertical: 16),
                 ),
               ),
-            ),
-          ],
-        ),
-      ),
+                              ),
+                        ],
+                      ),
+                    ),
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: 4,
         onTap: (i) {
