@@ -17,19 +17,19 @@ class AppointmentView extends StatelessWidget {
       child: Consumer<AppointmentViewModel>(
         builder: (context, vm, _) {
           return Scaffold(
-            appBar: AppBar(title: Text('Randevu Ayarla')),
+            appBar: AppBar(title: Text('Book Appointment')),
             body: Padding(
               padding: EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text('Uzman: $expertId'),
+                  Text('Expert: $expertId'),
                   SizedBox(height: 16),
-                  Text('Tarih & Saat: ${vm.formattedDate}'),
+                  Text('Date & Time: ${vm.formattedDate}'),
                   SizedBox(height: 8),
                   ElevatedButton(
                     onPressed: () => vm.pickDateTime(context),
-                    child: Text('Tarih/Saat Seç'),
+                    child: Text('Select Date/Time'),
                   ),
                   Row(
                     children: [
@@ -37,7 +37,7 @@ class AppointmentView extends StatelessWidget {
                         value: vm.isOnline,
                         onChanged: (v) => vm.isOnline = v ?? true,
                       ),
-                      Text('Online Seans'),
+                      Text('Online Session'),
                     ],
                   ),
                   SizedBox(height: 24),
@@ -50,13 +50,13 @@ class AppointmentView extends StatelessWidget {
                             userId: userId,
                           );
                           final msg =
-                              ok ? 'Randevu oluşturuldu.' : 'Hata: ${vm.error}';
+                              ok ? 'Appointment created successfully.' : 'Error: ${vm.error}';
                           ScaffoldMessenger.of(
                             context,
                           ).showSnackBar(SnackBar(content: Text(msg)));
                           if (ok) Navigator.pop(context);
                         },
-                        child: Text('Onayla'),
+                        child: Text('Confirm'),
                       ),
                 ],
               ),

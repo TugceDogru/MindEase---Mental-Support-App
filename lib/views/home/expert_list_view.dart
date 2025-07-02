@@ -17,7 +17,7 @@ class ExpertListView extends StatelessWidget {
             return Center(child: CircularProgressIndicator());
           }
           if (vm.state == ExpertListState.error) {
-            return Center(child: Text('Hata: ${vm.error}'));
+            return Center(child: Text('Error: ${vm.error}'));
           }
           return ListView.builder(
             itemCount: vm.experts.length,
@@ -33,7 +33,7 @@ class ExpertListView extends StatelessWidget {
                 title: Text(ex.fullName),
                 subtitle: Text(ex.specialization),
                 trailing: ElevatedButton(
-                  child: Text('Randevu Al'),
+                  child: Text('Book Appointment'),
                   onPressed: () {
                     Navigator.pushNamed(
                       context,

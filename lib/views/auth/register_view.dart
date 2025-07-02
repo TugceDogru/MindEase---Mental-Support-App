@@ -63,7 +63,7 @@ class _RegisterViewState extends State<RegisterView> {
                             ),
                           ),
                     SizedBox(height: 24),
-                    Text('Are you a proffesional ?', style: TextStyle(fontWeight: FontWeight.bold), textAlign: TextAlign.center),
+                    Text('Are you a professional?', style: TextStyle(fontWeight: FontWeight.bold), textAlign: TextAlign.center),
                   ],
                 ),
               ),
