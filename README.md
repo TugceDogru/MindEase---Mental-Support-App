@@ -70,19 +70,6 @@ MindEase is a comprehensive mental health support application built with Flutter
 - **Achievement System** - Gamified progress rewards
 - **Privacy Controls** - Granular data sharing permissions
 
-## Screenshots
-
-<div align="center">
-
-| Login Screen | Home Dashboard | Mood Test |
-|:---:|:---:|:---:|
-| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Mood Test](screenshots/mood_test.png) |
-
-| Breathing Exercise | Expert Chat | Profile |
-|:---:|:---:|:---:|
-| ![Breathing](screenshots/breathing.png) | ![Chat](screenshots/chat.png) | ![Profile](screenshots/profile.png) |
-
-*Screenshots will be added as the app development progresses*
 
 </div>
 
